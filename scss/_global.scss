@@ -1,0 +1,44 @@
+/* Aplicar Google Fonts a todos los HTML */
+* {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 100;
+}
+
+/* Aplicar el fondo del body */
+body {
+    background: 
+    linear-gradient(135deg,#0000 20.5%,#1e2749 0 29.5%,#0000 0) 0 50px,
+    linear-gradient( 45deg,#0000 8%,#1e2749 0 17%, #0000 0 58%) 100px 0,
+    linear-gradient(135deg,#0000 8%,#1e2749 0 17%, #0000 0 58%,#1e2749 0 67%,#0000 0),        
+    linear-gradient( 45deg,#0000 8%,#1e2749 0 17%, #0000 0 58%,#1e2749 0 67%,#0000 0 83%,#1e2749 0 92%,#0000 0),
+    #e4d9ff;
+    background-size: 200px 200px;
+}
+
+/* Aplicar parametros a todas las secciones y bloques de texto */
+section {
+    margin: 20px;
+    padding: 1rem;
+    background-color: $color-secundario;
+    justify-content: center;
+    align-content: center;
+}
+
+h1 {
+    text-align: center;
+    font-size: 30px;
+}
+
+h2 {
+    font-size: 16px;
+    text-align: center;
+}
+
+h6 {
+    text-align: center;
+}
+
+p {
+    text-align: justify;
+    line-height: 2rem;
+}

@@ -1,0 +1,33 @@
+/* Parametros de los iframes */
+#discografia {
+    div {
+        .spotify {
+            height: 30rem;
+            width: 80%;
+            margin: 1rem auto;
+        }
+        .youtube {
+            height: 14rem;
+            min-height: 1rem;
+            width: 28rem;
+            min-width: 2rem;
+            margin: 1rem auto;
+        }
+
+        /* Galeria responsive */
+        @media (min-width: 768px) and (max-width: 993px) {
+            .spotify {
+                height: 25rem;
+                width: 100%;
+                margin: 1rem auto;
+            }
+        }
+    }
+
+/* Separador entre canciones */
+    .separador {
+        width: 100%;
+        height: 1px;
+        border: 1px solid $color-4;
+    }
+}

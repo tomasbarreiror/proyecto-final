@@ -1,0 +1,79 @@
+/* Galeria para celulares */
+#galeria {
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    img {
+        width: 90%;
+        height: auto;
+        margin: 2px;
+    }
+}
+
+/* RESPONSIVE DESIGN */
+
+/* Galeria para tablets */
+@media (min-width: 768px) {
+    #galeria {
+        display: grid;
+        grid-template-columns: repeat(2, auto-fill, minmax(10%,100%));
+        grid-template-areas:
+        "galeria galeria"
+        "foto1 foto2"
+        "foto4 foto4"
+        "foto3 foto5"
+        "foto6 foto5"
+        "foto7 foto7";
+        gap: 6px;
+        padding-left: 3rem;
+        padding-right: 3rem;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        h1 {
+            grid-area: galeria;
+        }
+        .grid1 {
+            grid-area: foto1;
+        }
+    
+        .grid2 {
+            grid-area: foto2;
+        }
+    
+        .grid3 {
+            grid-area: foto3;
+        }
+    
+        .grid4 {
+            grid-area: foto4;
+        }
+    
+        .grid5 {
+            grid-area: foto5;
+        }
+    
+        .grid6 {
+            grid-area: foto6;
+        }
+    
+        .grid7 {
+            grid-area: foto7;
+        }
+    }  
+}
+
+/* Galeria para Ordenadores */
+@media (min-width: 991px) {
+    #galeria {
+        grid-template-columns: repeat(3, auto-fill, minmax(10%,100%));
+        grid-template-areas:
+        "galeria galeria galeria"
+        "foto1 foto2 foto3"
+        "foto4 foto4 foto5"
+        "foto6 foto7 foto5";
+    }
+}

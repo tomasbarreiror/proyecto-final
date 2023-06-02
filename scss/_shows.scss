@@ -1,0 +1,45 @@
+/* Foto cabecera */
+.foto-shows {
+    background-image: url(../img/shows.webp);
+    background-size: cover;
+    background-position: center;
+    text-decoration: overline;
+    color: $color-secundario;
+    filter: brightness(80%);
+    padding: 100px 0px;
+    margin-top: -1rem;
+
+    p {
+        font-size: 26px;
+        text-align: center;
+    }
+}
+
+/* Tabla de Shows */
+#shows {
+    table {
+        height: 25rem;
+        td {
+            vertical-align: middle;
+            text-align: center;
+        }
+        .fila-principal {
+            background-color: $color-4;
+            color: white;
+        }
+        .fila {
+            background: $color-3;
+            .sold-out {
+                color: $color-4;
+                text-decoration: line-through;
+            }
+            
+            .tickets {
+                color: $color-5;
+                text-decoration: solid;
+            }
+        }
+    }
+}
+
+

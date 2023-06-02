@@ -1,0 +1,49 @@
+/* Header y Nav */
+header {
+    background-color: $color-principal;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+}
+
+nav {
+    div {
+        a{
+            img{
+                max-width: 200px;
+            }
+        }
+    }
+}
+
+.nav-link {
+    color: $color-secundario;
+}
+
+/* Footer */
+footer {
+    padding: 20px 0;
+    background-color: $color-5;
+    color: white;
+    margin-top: 2px;
+    
+    div {
+        ul {
+            justify-content: center;
+            list-style: none;
+            padding-left: 0rem;
+            li a {
+                color: white;
+            } 
+
+        }
+
+        p {
+            text-align: center;
+        }
+    }
+    img {
+        width: 40px;
+    }
+}
+
