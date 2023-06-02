@@ -1,0 +1,106 @@
+* {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 100;
+}
+
+body {
+  background-color: #FAFAFF;
+  height: 100%;
+}
+
+section {
+  padding: 1rem;
+  background-color: white;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-align: center;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+h2, h3, h4, h5 {
+  font-size: 27px;
+}
+
+p {
+  text-align: justify;
+  line-height: 2rem;
+}
+
+header {
+  background-color: #30343F;
+  position: sticky;
+  top: 0px;
+}
+
+nav div a img {
+  max-width: 200px;
+}
+
+footer {
+  padding: 20px 0;
+  background-color: #1E2749;
+  color: white;
+  margin-top: 2px;
+}
+footer div ul {
+  justify-content: center;
+  list-style: none;
+}
+footer div p {
+  text-align: center;
+}
+footer img {
+  max-width: 45px;
+}
+
+.foto-main {
+  margin: auto;
+  width: 480px;
+}
+
+#discografia div .spotify {
+  height: 30rem;
+  width: 70%;
+  margin: 1rem auto;
+}
+#discografia div .youtube {
+  height: 360px;
+  width: 640px;
+  margin: 1rem auto;
+}
+
+#shows table {
+  height: 25rem;
+}
+#shows table td {
+  vertical-align: middle;
+  text-align: center;
+}
+#shows table .fila-principal {
+  background-color: #273469;
+  color: white;
+}
+#shows table .fila {
+  background: #E4D9FF;
+}
+#shows table .fila .sold-out {
+  color: #273469;
+  text-decoration: line-through;
+}
+#shows table .fila .tickets {
+  color: #1E2749;
+  text-decoration: solid;
+}
+
+div .btn-enviar {
+  justify-content: center;
+}
+div .btn-enviar button {
+  padding: 10px 50px;
+}
+
+/*# sourceMappingURL=styles.css.map */
