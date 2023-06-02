@@ -1,31 +1,36 @@
+/* Colores */ /* Aplicar Google Fonts a todos los HTML */
 * {
   font-family: "Work Sans", sans-serif;
   font-weight: 100;
 }
 
+/* Aplicar el fondo del body */
 body {
-  background-color: #FAFAFF;
-  height: 100%;
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0) 20.5%, #1e2749 0 29.5%, rgba(0, 0, 0, 0) 0) 0 50px, linear-gradient(45deg, rgba(0, 0, 0, 0) 8%, #1e2749 0 17%, rgba(0, 0, 0, 0) 0 58%) 100px 0, linear-gradient(135deg, rgba(0, 0, 0, 0) 8%, #1e2749 0 17%, rgba(0, 0, 0, 0) 0 58%, #1e2749 0 67%, rgba(0, 0, 0, 0) 0), linear-gradient(45deg, rgba(0, 0, 0, 0) 8%, #1e2749 0 17%, rgba(0, 0, 0, 0) 0 58%, #1e2749 0 67%, rgba(0, 0, 0, 0) 0 83%, #1e2749 0 92%, rgba(0, 0, 0, 0) 0), #e4d9ff;
+  background-size: 200px 200px;
 }
 
+/* Aplicar parametros a todas las secciones y bloques de texto */
 section {
   margin: 20px;
   padding: 1rem;
-  background-color: white;
+  background-color: rgba(250, 250, 255, 0.9921568627);
   justify-content: center;
   align-content: center;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1 {
+  text-align: center;
+  font-size: 30px;
+}
+
+h2 {
+  font-size: 16px;
   text-align: center;
 }
 
-h1 {
-  font-size: 36px;
-}
-
-h2, h3, h4, h5 {
-  font-size: 27px;
+h6 {
+  text-align: center;
 }
 
 p {
@@ -33,16 +38,23 @@ p {
   line-height: 2rem;
 }
 
+/* Header y Nav */
 header {
   background-color: #30343F;
   position: sticky;
   top: 0px;
+  z-index: 1;
 }
 
 nav div a img {
   max-width: 200px;
 }
 
+.nav-link {
+  color: rgba(250, 250, 255, 0.9921568627);
+}
+
+/* Footer */
 footer {
   padding: 20px 0;
   background-color: #1E2749;
@@ -52,26 +64,40 @@ footer {
 footer div ul {
   justify-content: center;
   list-style: none;
+  padding-left: 0rem;
+}
+footer div ul li a {
+  color: white;
 }
 footer div p {
   text-align: center;
 }
 footer img {
-  max-width: 45px;
+  width: 40px;
 }
 
+/* Foto principal */
 div .foto-main {
   width: 480px;
 }
 
+/* Parametros de los iframes */
+#discografia {
+  /* Separador entre canciones */
+}
+#discografia div {
+  /* Galeria responsive */
+}
 #discografia div .spotify {
   height: 30rem;
   width: 80%;
   margin: 1rem auto;
 }
 #discografia div .youtube {
-  height: 280px;
-  width: 540px;
+  height: 14rem;
+  min-height: 1rem;
+  width: 28rem;
+  min-width: 2rem;
   margin: 1rem auto;
 }
 @media (min-width: 768px) and (max-width: 993px) {
@@ -81,7 +107,29 @@ div .foto-main {
     margin: 1rem auto;
   }
 }
+#discografia .separador {
+  width: 100%;
+  height: 1px;
+  border: 1px solid #273469;
+}
 
+/* Foto cabecera */
+.foto-shows {
+  background-image: url(../img/shows.webp);
+  background-size: cover;
+  background-position: center;
+  text-decoration: overline;
+  color: rgba(250, 250, 255, 0.9921568627);
+  filter: brightness(80%);
+  padding: 100px 0px;
+  margin-top: -1rem;
+}
+.foto-shows p {
+  font-size: 26px;
+  text-align: center;
+}
+
+/* Tabla de Shows */
 #shows table {
   height: 25rem;
 }
@@ -94,7 +142,7 @@ div .foto-main {
   color: white;
 }
 #shows table .fila {
-  background: #E4D9FF;
+  background: #e4d9ff;
 }
 #shows table .fila .sold-out {
   color: #273469;
@@ -105,7 +153,9 @@ div .foto-main {
   text-decoration: solid;
 }
 
+/* Galeria para celulares */
 #galeria {
+  width: 100%;
   flex-direction: column;
   text-align: center;
   align-items: center;
@@ -117,6 +167,7 @@ div .foto-main {
 }
 
 /* RESPONSIVE DESIGN */
+/* Galeria para tablets */
 @media (min-width: 768px) {
   #galeria {
     display: grid;
@@ -131,7 +182,7 @@ div .foto-main {
     height: 100%;
     object-fit: cover;
   }
-  #galeria h3 {
+  #galeria h1 {
     grid-area: galeria;
   }
   #galeria .grid1 {
@@ -156,12 +207,26 @@ div .foto-main {
     grid-area: foto7;
   }
 }
+/* Galeria para Ordenadores */
 @media (min-width: 991px) {
   #galeria {
     grid-template-columns: repeat(3, auto-fill, minmax(10%, 100%));
     grid-template-areas: "galeria galeria galeria" "foto1 foto2 foto3" "foto4 foto4 foto5" "foto6 foto7 foto5";
   }
 }
+/* Foto cabecera */
+.foto-contactanos {
+  background-image: url(../img/velez.webp);
+  background-size: cover;
+  background-position: center;
+  text-decoration: overline;
+  color: rgba(250, 250, 255, 0.9921568627);
+  filter: brightness(80%);
+  padding: 200px 0px;
+  margin-top: -1rem;
+}
+
+/* Boton personalizado */
 div .btn-enviar {
   justify-content: center;
 }

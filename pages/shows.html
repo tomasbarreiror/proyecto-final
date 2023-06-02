@@ -5,93 +5,101 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Title y shorticon -->
-    <title>Duki</title>
-    <link rel="shortcut icon" href="duki.ico" type="image/x-icon">
-    <!-- Bootstrap -->
+    <title>Duki | Shows</title>
+    <link rel="shortcut icon" href="../duki.ico" type="image/x-icon">
+	<!-- AOS -->
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<!-- Bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
-    <!-- Normalize -->
-	<link rel="stylesheet" type="text/css" href="css/normalize.css">
-    <!-- Google fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<!-- Normalize -->
+	<link rel="stylesheet" type="text/css" href="../css/normalize.css">
+	<!-- Google fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 	<link href="https://fonts.googleapis.com/css2?family=Work+Sans&amp;display=swap" rel="stylesheet">
-    <!-- CSS Propio -->
-	<link rel="stylesheet" href="../css/styles.css">
+	<!-- CSS Propio -->
+	<link rel="stylesheet" type="text/css" href="../css/styles.css">
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#"><img src="../img/dukilogo.webp" alt=""></a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link" href="../index.html">Inicio</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="discografia.html">Discografia</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="shows.html">Shows</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="galeria.html">Galeria</a>
-                  </li>
-                  <li class="nav-item">
-					          <a class="nav-link" href="contactanos.html">Contactanos</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
-    </header>
+        <nav class="navbar navbar-expand-lg mb-3">
+			<div class="container-fluid d-flex">
+				<a class="navbar-brand" href="#">
+					<img src="../img/dukilogo.webp" alt="">
+				</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse text-center col-md-6" id="navbarNav">
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a class="nav-link" href="../index.html">Inicio</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="discografia.html">Discografia</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="shows.html">Shows</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="galeria.html">Galeria</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="contactanos.html">Contacto</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+
+	<div class="foto-shows">
+		<p>Proximos eventos</p>
+	</div>
 
     <section id="shows" class="container">
-      <h4>Shows</h4>
-      <table class="table table-bordered border-light">
-    <tbody>
-      <tr class="fila-principal">
-        <td>Lugar</td>
-        <td>Fecha</td>
-        <td>Comprar</td>
-      </tr>
-      <tr class="fila">
-        <td>Buenos Aires, Argentina</td>
-        <td>30/04/2023</td>
-        <td><a class="sold-out">SOLD OUT</a></td>
-      </tr>
-      <tr class="fila">
-        <td>Madrid, España</td>
-        <td>08/05/2023</td>
-        <td><a href="" class="tickets">Tickets disponibles</a></td>
-      </tr>
-      <tr class="fila">
-        <td>Ciudad de Mexico, Mexico</td>
-        <td>16/05/2023</td>
-        <td><a href="" class="tickets">Tickets disponibles</a></td>
-      </tr>
-      <tr class="fila">
-        <td>Monterrey, Mexico</td>
-        <td>20/05/2023</td>
-        <td><a href="" class="tickets">Tickets disponibles</a></td>
-      </tr>
-    </tbody>
-  </table>
-  </section>
+        <h1 data-aos="fade-up">Shows</h1>
+        <table class="table table-bordered border-light" data-aos="fade-up">
+			<tbody>
+				<tr class="fila-principal">
+					<td>Lugar</td>
+					<td>Fecha</td>
+					<td>Comprar</td>
+				</tr>
+				<tr class="fila">
+					<td>Buenos Aires, Argentina</td>
+					<td>30/04/2023</td>
+					<td><a class="sold-out">SOLD OUT</a></td>
+				</tr>
+				<tr class="fila">
+					<td>Madrid, España</td>
+					<td>08/05/2023</td>
+					<td><a href="" class="tickets">Tickets disponibles</a></td>
+				</tr>
+				<tr class="fila">
+					<td>Ciudad de Mexico, Mexico</td>
+					<td>16/05/2023</td>
+					<td><a href="" class="tickets">Tickets disponibles</a></td>
+				</tr>
+				<tr class="fila">
+					<td>Monterrey, Mexico</td>
+					<td>20/05/2023</td>
+					<td><a href="" class="tickets">Tickets disponibles</a></td>
+				</tr>
+			</tbody>
+		</table>
+    </section>
 
-  <footer>
+    <footer>
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6">
-					<h6>Redes</h6>
-					<ul class="d-flex gap-5">
-						<li><a href="https://www.instagram.com/duki" title="Instagram" target="_blank"><img src="../img/instagram.webp" alt=""></a></li>
-						<li><a href="https://www.twitter.com/DukiSSJ" title="Twitter" target="_blank" ><img src="../img/twitter.webp" alt=""></a></li>
-						<li><a href="https://www.youtube.com/@duki" title="Youtube" target="_blank"><img src="../img/youtube.webp" alt=""></a></li>
-						<li><a href="https://open.spotify.com/artist/1bAftSH8umNcGZ0uyV7LMg?si=cesgpdBpTY6lE0LuR6KwYw" title="Spotify" target="_blank"><img src="../img/spotify.webp" alt=""></a></li>
+					<h6>Redes sociales</h6>
+					<ul class="d-flex justify-content-evenly gap-2">
+						<li><a href="https://www.instagram.com/duki" title="Instagram" target="_blank"><img src="../img/instagram.webp" alt="Instagram de Duki"></a></li>
+						<li><a href="https://www.twitter.com/DukiSSJ" title="Twitter" target="_blank" ><img src="../img/twitter.webp" alt="Twitter de Duki"></a></li>
+						<li><a href="https://www.youtube.com/@duki" title="Youtube" target="_blank"><img src="../img/youtube.webp" alt="Canal de YouTube de Duki"></a></li>
+						<li><a href="https://open.spotify.com/artist/1bAftSH8umNcGZ0uyV7LMg?si=cesgpdBpTY6lE0LuR6KwYw" title="Spotify" target="_blank"><img src="../img/spotify.webp" alt="Spotify de Duki"></a></li>
 					</ul>
 				</div>
 				<div class="col-md-6">
@@ -101,7 +109,12 @@
 		</div>
     </footer>
 
-    <!-- Bootstrap -->
+<!-- BOOTSTRAP -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- AOS -->
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+		AOS.init();
+	</script>
 </body>
 </html>
