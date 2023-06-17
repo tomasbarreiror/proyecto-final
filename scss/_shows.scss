@@ -1,13 +1,8 @@
 /* Foto cabecera */
 .foto-shows {
     background-image: url(../img/shows.webp);
-    background-size: cover;
-    background-position: center;
-    text-decoration: overline;
-    color: $color-secundario;
-    filter: brightness(80%);
     padding: 100px 0px;
-    margin-top: -1rem;
+    @include foto-cabecera;
 
     p {
         font-size: 26px;

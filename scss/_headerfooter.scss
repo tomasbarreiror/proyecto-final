@@ -18,6 +18,10 @@ nav {
 
 .nav-link {
     color: $color-secundario;
+    transition: 400ms;
+    :hover {
+        color: #999;
+    }
 }
 
 /* Footer */
@@ -32,10 +36,6 @@ footer {
             justify-content: center;
             list-style: none;
             padding-left: 0rem;
-            li a {
-                color: white;
-            } 
-
         }
 
         p {

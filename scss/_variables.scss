@@ -5,3 +5,14 @@ $color-3: #e4d9ff;
 $color-4: #273469;
 $color-5: #1E2749;
 $opacidad-blanco: #00000000;
+
+/* Mixins y extends */
+
+@mixin foto-cabecera {
+    background-size: cover;
+    background-position: center;
+    text-decoration: overline;
+    color: $color-secundario;
+    filter: brightness(80%);
+    margin-top: -1rem;
+}
